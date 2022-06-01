@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import GoogleButton from "react-google-button";
@@ -29,7 +30,7 @@ const Login = () => {
           <GoogleButton className="g-btn" type="dark" />
         </div>
       </div>
-      <div className="p-4 box mt-3 text-center">Don't have an account?</div>
+      <div className="p-4 box mt-3 text-center">Don't have an account? </div>
     </>
   );
 };
