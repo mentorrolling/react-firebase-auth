@@ -5,6 +5,8 @@ import "./App.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -13,6 +15,15 @@ function App() {
         <Col>
           <UserAuthContextProvider>
             <Routes>
+              <Route
+                path="/home"
+                element={
+                  <ProtectedRoute>
+                    <Home />
+                  </ProtectedRoute>
+                }
+              />
+
               <Route path="/" element={<Login />} />
               <Route path="/signup" element={<SignUp />} />
             </Routes>
