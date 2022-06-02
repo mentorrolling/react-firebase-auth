@@ -6,4 +6,6 @@ Ejercicio de autenticación usando Firebase y desarrollado con React js.
 
 `cd react-firebase-auth`
 
+`npm install`
+
 `npm run dev`
